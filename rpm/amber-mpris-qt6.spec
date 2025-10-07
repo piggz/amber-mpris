@@ -35,6 +35,7 @@ QML plugin for %{name}.
 
 %build
 
+export QMAKE_CXX=g++
 qmake6 -query QMAKE_SPEC
 qmake6 -query QT_INSTALL_PREFIX
 export PATH=$PATH:%{_qt6_bindir}
