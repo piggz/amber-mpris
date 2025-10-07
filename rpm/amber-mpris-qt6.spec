@@ -35,6 +35,7 @@ QML plugin for %{name}.
 
 %build
 
+export CXX=g++
 export PATH=$PATH:%{_qt6_bindir}
 %qmake_qt6 VERSION=`echo %{version} | sed 's/+.*//'`
 %make_build
